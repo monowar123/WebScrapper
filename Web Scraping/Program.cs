@@ -16,8 +16,13 @@ namespace Web_Scraping
 
         static void Main(string[] args)
         {
+            //-----Scrap with agility pack------------
+            //AgilityPackScraper scraper = new AgilityPackScraper("https://scrapeme.live/shop/page/1/");
+            //scraper.ScrapAllPages(48);
 
-            AgilityPackScraper scraper = new AgilityPackScraper("https://scrapeme.live/shop/page/1/");
+
+            //-----Scrap with selenium------------
+            SeleniumScraper scraper = new SeleniumScraper("https://scrapeme.live/shop/page/1/");
             scraper.ScrapAllPages(48);
 
 
